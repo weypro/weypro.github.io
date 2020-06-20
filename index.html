@@ -263,7 +263,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-06-20 14:27:24 / 修改时间：15:53:05" itemprop="dateCreated datePublished" datetime="2020-06-20T14:27:24+08:00">2020-06-20</time>
+              <time title="创建时间：2020-06-20 14:27:24 / 修改时间：16:16:40" itemprop="dateCreated datePublished" datetime="2020-06-20T14:27:24+08:00">2020-06-20</time>
             </span>
 
           
@@ -278,12 +278,13 @@
 
       
           <p>感谢大家来看这个博客。<br>以下是公式测试：  </p>
-<p>$ \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,. $<br>$x+y=z$</p>
+<p>$$ \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,. $$<br>$$x+y=z$$</p>
 <p>解决mathjax与代码高亮的冲突</p>
 <p>如果你按照教程安装了代码高亮插件hexo-prism-plugin，单独使用是没有问题的，但如果你又使用了mathjax，并且按照网上教程，安装kramed插件并修改了js文件里的正则表达式（为了解决markdown和mathjax的语法冲突），好了，那你的代码就无法高亮了。解决方法很简单，别用kramed插件了，还用原来自带的marked插件，直接改它的正则表达式就行了，改法如下：</p>
 <p>打开D:\study\program\blog\node_modules\marked\lib\marked.js escape:处替换成：</p>
 <p>escape: /^\([`*[]()#$+-.!_&gt;])/,<br>em:处替换成：</p>
-<p>em: /^*((?:**|[\s\S])+?)*(?!*)/,</p>
+<p>em: /^*((?:**|[\s\S])+?)*(?!*)/,  </p>
+<p>注意不能两个{合并，要写成{ {</p>
 
       
     </div>
