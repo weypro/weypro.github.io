@@ -270,6 +270,7 @@
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -518,6 +519,47 @@
     
 
   
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '9d9fdb1e56df5baf6fc0',
+      clientSecret: '090d5876cb8d8d61a90ab14ef2f6efa688d5e6d6',
+      repo        : 'weypro.github.io',
+      owner       : 'weypro',
+      admin       : ['weypro'],
+      id          : '8c2a64416d83cdcae8b89a81682985ca',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '9d9fdb1e56df5baf6fc0',
+      clientSecret: '090d5876cb8d8d61a90ab14ef2f6efa688d5e6d6',
+      repo        : 'weypro.github.io',
+      owner       : 'weypro',
+      admin       : ['weypro'],
+      id          : '8c2a64416d83cdcae8b89a81682985ca',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
 
 </body>
 </html>
