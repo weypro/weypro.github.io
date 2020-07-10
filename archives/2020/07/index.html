@@ -20,19 +20,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="看到大佬写的一段解决promise调试的js代码，记录在此">
-<meta property="og:type" content="article">
-<meta property="og:title" content="解决promise调试的js代码">
-<meta property="og:url" content="http://yoursite.com/2020/06/20/%E8%A7%A3%E5%86%B3promise%E8%B0%83%E8%AF%95%E7%9A%84js%E4%BB%A3%E7%A0%81/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="wey的blog">
+<meta property="og:url" content="http://yoursite.com/archives/2020/07/index.html">
 <meta property="og:site_name" content="wey的blog">
-<meta property="og:description" content="看到大佬写的一段解决promise调试的js代码，记录在此">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-06-20T07:11:41.833Z">
-<meta property="article:modified_time" content="2020-06-20T13:03:46.512Z">
 <meta property="article:author" content="wey">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/06/20/%E8%A7%A3%E5%86%B3promise%E8%B0%83%E8%AF%95%E7%9A%84js%E4%BB%A3%E7%A0%81/">
+<link rel="canonical" href="http://yoursite.com/archives/2020/07/">
 
 
 <script id="page-configurations">
@@ -40,12 +36,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : true,
+    isPost : false,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>解决promise调试的js代码 | wey的blog</title>
+  <title>归档 | wey的blog</title>
   
 
 
@@ -154,126 +150,60 @@
         <div class="content-wrap">
           
 
-          <div class="content post posts-expand">
+          <div class="content archive">
             
 
-    
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/20/%E8%A7%A3%E5%86%B3promise%E8%B0%83%E8%AF%95%E7%9A%84js%E4%BB%A3%E7%A0%81/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="wey">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="wey的blog">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          解决promise调试的js代码
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-06-20 15:11:41 / 修改时间：21:03:46" itemprop="dateCreated datePublished" datetime="2020-06-20T15:11:41+08:00">2020-06-20</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/programming/" itemprop="url" rel="index"><span itemprop="name">programming</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+	
+        
+	
+        <!--<span class="collection-header">cheers.undefined! 目前共计 8 篇日志。 继续努力。</span>-->
+	<span class="collection-header">目前共计 8 篇日志。</span>
+      </div>
 
       
-        <p>看到大佬写的一段解决promise调试的js代码，记录在此  </p>
-<a id="more"></a>
-
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">StoppablePromise</span> <span class="token punctuation">{</span>
-    <span class="token function">constructor</span><span class="token punctuation">(</span>func<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> func <span class="token operator">===</span> <span class="token string">'function'</span><span class="token punctuation">)</span>
-            <span class="token keyword">this</span><span class="token punctuation">.</span>_promise <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span>func<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">else</span>
-            <span class="token keyword">this</span><span class="token punctuation">.</span>_promise <span class="token operator">=</span> func<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token function">catch_func_gen</span><span class="token punctuation">(</span>catch_func<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token punctuation">(</span>data<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>data <span class="token operator">===</span> <span class="token string">'break'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                <span class="token keyword">throw</span> <span class="token string">'break'</span>
-            <span class="token punctuation">}</span>
-            <span class="token function">catch_func</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
-        <span class="token punctuation">}</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">catch</span><span class="token punctuation">(</span>func<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">let</span> promise <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_promise<span class="token punctuation">.</span><span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">catch_func_gen</span><span class="token punctuation">(</span>func<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">StoppablePromise</span><span class="token punctuation">(</span>promise<span class="token punctuation">)</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token function">then</span><span class="token punctuation">(</span>func<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">let</span> then <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_promise<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>func<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">StoppablePromise</span><span class="token punctuation">(</span>then<span class="token punctuation">)</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+    <div class="collection-year">
+      <span class="collection-header">2020</span>
     </div>
 
-    
-    
-    
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-      <footer class="post-footer">
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-07-10T21:01:22+08:00"
+              content="2020-07-10">
+          07-10
+        </time>
+      </div>
 
-        
+      <div class="post-title">
+          <a class="post-title-link" href="/2020/07/10/20200710404%E4%B8%8E%E5%86%B0%E6%A3%8D1/" itemprop="url">
+            <span itemprop="name">404与冰棍的恋爱物语 1</span>
+          </a>
+      </div>
 
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2020/06/20/%E9%9A%8F%E4%BE%BF%E5%86%99%E7%82%B9%E4%BB%80%E4%B9%88/" rel="prev" title="随便写点什么">
-      <i class="fa fa-chevron-left"></i> 随便写点什么
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/06/20/ceshi/" rel="next" title="测试">
-      测试 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
+    </header>
   </article>
+
+
+    </div>
+  </div>
   
   
+  
+
   
 
 
 
           </div>
           
-    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -523,25 +453,6 @@
 
   
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
-
-<script>
-NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
-    var gitalk = new Gitalk({
-      clientID    : '9d9fdb1e56df5baf6fc0',
-      clientSecret: '090d5876cb8d8d61a90ab14ef2f6efa688d5e6d6',
-      repo        : 'weypro.github.io',
-      owner       : 'weypro',
-      admin       : ['weypro'],
-      id          : '8c2a64416d83cdcae8b89a81682985ca',
-        language: '',
-      distractionFreeMode: true
-    });
-    gitalk.render('gitalk-container');
-  }, window.Gitalk);
-});
-</script>
 
 </body>
 </html>

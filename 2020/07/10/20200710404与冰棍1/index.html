@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="看到大佬写的一段解决promise调试的js代码，记录在此">
+  <meta name="description" content="一个小故事">
 <meta property="og:type" content="article">
-<meta property="og:title" content="解决promise调试的js代码">
-<meta property="og:url" content="http://yoursite.com/2020/06/20/%E8%A7%A3%E5%86%B3promise%E8%B0%83%E8%AF%95%E7%9A%84js%E4%BB%A3%E7%A0%81/index.html">
+<meta property="og:title" content="404与冰棍的恋爱物语 1">
+<meta property="og:url" content="http://yoursite.com/2020/07/10/20200710404%E4%B8%8E%E5%86%B0%E6%A3%8D1/index.html">
 <meta property="og:site_name" content="wey的blog">
-<meta property="og:description" content="看到大佬写的一段解决promise调试的js代码，记录在此">
+<meta property="og:description" content="一个小故事">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-06-20T07:11:41.833Z">
-<meta property="article:modified_time" content="2020-06-20T13:03:46.512Z">
+<meta property="article:published_time" content="2020-07-10T13:01:22.609Z">
+<meta property="article:modified_time" content="2020-07-10T13:02:32.971Z">
 <meta property="article:author" content="wey">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/06/20/%E8%A7%A3%E5%86%B3promise%E8%B0%83%E8%AF%95%E7%9A%84js%E4%BB%A3%E7%A0%81/">
+<link rel="canonical" href="http://yoursite.com/2020/07/10/20200710404%E4%B8%8E%E5%86%B0%E6%A3%8D1/">
 
 
 <script id="page-configurations">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>解决promise调试的js代码 | wey的blog</title>
+  <title>404与冰棍的恋爱物语 1 | wey的blog</title>
   
 
 
@@ -161,7 +161,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/20/%E8%A7%A3%E5%86%B3promise%E8%B0%83%E8%AF%95%E7%9A%84js%E4%BB%A3%E7%A0%81/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/10/20200710404%E4%B8%8E%E5%86%B0%E6%A3%8D1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -174,7 +174,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          解决promise调试的js代码
+          404与冰棍的恋爱物语 1
         </h1>
 
         <div class="post-meta">
@@ -185,7 +185,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-06-20 15:11:41 / 修改时间：21:03:46" itemprop="dateCreated datePublished" datetime="2020-06-20T15:11:41+08:00">2020-06-20</time>
+              <time title="创建时间：2020-07-10 21:01:22 / 修改时间：21:02:32" itemprop="dateCreated datePublished" datetime="2020-07-10T21:01:22+08:00">2020-07-10</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -193,7 +193,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/programming/" itemprop="url" rel="index"><span itemprop="name">programming</span></a>
+                  <a href="/categories/story/" itemprop="url" rel="index"><span itemprop="name">story</span></a>
                 </span>
             </span>
 
@@ -208,37 +208,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>看到大佬写的一段解决promise调试的js代码，记录在此  </p>
+        <p>一个小故事</p>
 <a id="more"></a>
 
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">StoppablePromise</span> <span class="token punctuation">{</span>
-    <span class="token function">constructor</span><span class="token punctuation">(</span>func<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> func <span class="token operator">===</span> <span class="token string">'function'</span><span class="token punctuation">)</span>
-            <span class="token keyword">this</span><span class="token punctuation">.</span>_promise <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span>func<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">else</span>
-            <span class="token keyword">this</span><span class="token punctuation">.</span>_promise <span class="token operator">=</span> func<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token function">catch_func_gen</span><span class="token punctuation">(</span>catch_func<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token punctuation">(</span>data<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>data <span class="token operator">===</span> <span class="token string">'break'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                <span class="token keyword">throw</span> <span class="token string">'break'</span>
-            <span class="token punctuation">}</span>
-            <span class="token function">catch_func</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
-        <span class="token punctuation">}</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">catch</span><span class="token punctuation">(</span>func<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">let</span> promise <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_promise<span class="token punctuation">.</span><span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">catch_func_gen</span><span class="token punctuation">(</span>func<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">StoppablePromise</span><span class="token punctuation">(</span>promise<span class="token punctuation">)</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token function">then</span><span class="token punctuation">(</span>func<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">let</span> then <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_promise<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>func<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">StoppablePromise</span><span class="token punctuation">(</span>then<span class="token punctuation">)</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>“！”<br>404猛然睁开了双眼，连喘了几口气。他还未完全放松下来，看到周围的景象，愣住了。<br>“这是哪？”<br>眼前似乎不是他的卧室，不，肯定不是。先不说装修风格如此高大上，这卧室就比他自己的卧室大了好多。<br>404看了一眼桌上正在充电的手机，恰好8点。慢着，这手机也不是他的！<br>“陈志，快点起床吃早饭了！”门外，一个女人的声音传了进来。<br>“陈志？这不是那本小说里男配角的名字吗？”404灵光一闪。莫非，自己穿进了书里？<br>要知道，这名男配角在小说里的角色可是一个小丑型人物，干啥啥不行，整天跟男主闹事，也不知道这男配角被作者强行创作出来的意义是不是就是恶心书里的角色，还有读者。最后么，当然下场也好不到哪去，因为他在国内高考根本考不上本科，所以就被父母花重金送出了国外。最后由于一场意外的枪击事故客死他乡。简直就是标准的配角模板。<br>这可不行！上辈子他刚刚高考完，还没享受完快乐的暑假，就这么莫名其妙地穿书了。要是这次再出师未捷身先死，那也太惨了吧。<br>所以，很显然第一要务就是以陈志的身份活下去！好吧，先吃早饭。<br>早饭过后，陈志躺在床上，还在接受这一穿书的现实。还好是周六，有大把时间给他理清思路。作业么，他其实可以不写，老师已经差不多放弃他了。回到原著剧情，书中说，这名男配的家庭背景不错，可着实有些出乎他的意料。父母经常出差，所以一个月还不一定能见着一次面，这对他来说是个好消息，否则很容易被男配的亲生父母发现他们的儿子好像变了一个人，虽然他们不会联想到穿书之类的事情上，但是他接下来的日子可能就不好过了。和父母减少接触是必须的。<br>还记得原著里，男主梁涵是个隐藏的计算机大佬，不过平时为人低调，而且家境贫寒。即便如此，他成功地靠着自己的才华，在大学期间申请到了多伦多大学的交换生，然后长居枫叶国。<br>梁涵还有一个妹妹，叫梁菡。这个妹妹也是推进原著剧情的重要人物。还记得一个关键情节，陈志的某个“好兄弟”向梁涵表白被拒绝了，恼羞成怒，拜托陈志帮忙教育教育她。于是，陈志托人花钱找了几个精神小伙，趁着放学将梁涵梁菡两兄妹堵在教室里，冷言冷语嘲讽他们。当然，也没人敢真的动手。后来，一个精神小伙说漏了嘴，兄妹两个才知道陈志也是帮凶之一。梁涵气归气，当然不会真的跟他动手，但是作为计算机大佬总有点别的法子。他渗透了几个颜色网站，把里面的联系方式都改成了陈志。这下倒好，一堆小广告都打到了陈志的手机上。陈志也知道，是梁涵搞的鬼，但是他没有证据，只能言语恐吓。之前还停留在陈志单方面言语霸凌，此事件后两方算是正式对立。<br>看了一眼时间，不巧，这件事三天后就会发生。估计周一一上学那哥们就会来找陈志。</p>
 
     </div>
 
@@ -254,13 +227,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/06/20/%E9%9A%8F%E4%BE%BF%E5%86%99%E7%82%B9%E4%BB%80%E4%B9%88/" rel="prev" title="随便写点什么">
-      <i class="fa fa-chevron-left"></i> 随便写点什么
+    <a href="/2020/06/27/20200627moristory2part3/" rel="prev" title="moristory2 part2">
+      <i class="fa fa-chevron-left"></i> moristory2 part2
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/06/20/ceshi/" rel="next" title="测试">
-      测试 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -534,7 +504,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'weypro.github.io',
       owner       : 'weypro',
       admin       : ['weypro'],
-      id          : '8c2a64416d83cdcae8b89a81682985ca',
+      id          : '5a7219fbd6ea9d420d82b460447db4e7',
         language: '',
       distractionFreeMode: true
     });
