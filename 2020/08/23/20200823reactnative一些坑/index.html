@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="一些剧情构思">
+  <meta name="description" content="配react native环境的一些坑">
 <meta property="og:type" content="article">
-<meta property="og:title" content="moristory2 part1">
-<meta property="og:url" content="http://yoursite.com/2020/06/23/20200623moristory2part1/index.html">
+<meta property="og:title" content="react native一些坑">
+<meta property="og:url" content="http://yoursite.com/2020/08/23/20200823reactnative%E4%B8%80%E4%BA%9B%E5%9D%91/index.html">
 <meta property="og:site_name" content="wey的blog">
-<meta property="og:description" content="一些剧情构思">
+<meta property="og:description" content="配react native环境的一些坑">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-06-23T10:23:36.756Z">
-<meta property="article:modified_time" content="2020-06-27T06:43:59.612Z">
+<meta property="article:published_time" content="2020-08-23T07:22:54.376Z">
+<meta property="article:modified_time" content="2020-08-23T07:50:22.403Z">
 <meta property="article:author" content="wey">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/06/23/20200623moristory2part1/">
+<link rel="canonical" href="http://yoursite.com/2020/08/23/20200823reactnative%E4%B8%80%E4%BA%9B%E5%9D%91/">
 
 
 <script id="page-configurations">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>moristory2 part1 | wey的blog</title>
+  <title>react native一些坑 | wey的blog</title>
   
 
 
@@ -161,7 +161,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/23/20200623moristory2part1/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/23/20200823reactnative%E4%B8%80%E4%BA%9B%E5%9D%91/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -174,7 +174,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          moristory2 part1
+          react native一些坑
         </h1>
 
         <div class="post-meta">
@@ -183,23 +183,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-06-23 18:23:36" itemprop="dateCreated datePublished" datetime="2020-06-23T18:23:36+08:00">2020-06-23</time>
+              <time title="创建时间：2020-08-23 15:22:54 / 修改时间：15:50:22" itemprop="dateCreated datePublished" datetime="2020-08-23T15:22:54+08:00">2020-08-23</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-06-27 14:43:59" itemprop="dateModified" datetime="2020-06-27T14:43:59+08:00">2020-06-27</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/story/" itemprop="url" rel="index"><span itemprop="name">story</span></a>
+                  <a href="/categories/programming/" itemprop="url" rel="index"><span itemprop="name">programming</span></a>
                 </span>
             </span>
 
@@ -214,11 +208,26 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>一些剧情构思</p>
+        <p>配react native环境的一些坑</p>
 <a id="more"></a>
 
-<p>高阶文明不断发展，终于确定了宇宙的结局：大撕裂。随着预言的日期一步步接近，各种数据也验证这一结局正在成为现实，因此高阶文明成立了文明方舟，制定奇点逃离计划。虽然他们最终打穿了他们以为的奇点，但是他们没想到奇点之外是另一个宇宙（天使所在的宇宙），那个宇宙有着截然不同的物理规律，包括“圣光”这种“物质”。结果靠近奇点的高阶文明联合舰队和天使团灭了。但是高阶文明仍留下了火种并且穿过了奇点（比如处于冷冻状态没受多大影响）。留下来的高阶生物不得不退化，连生存都很困难，因为要适应新的物理规律。<br>随着时间的推移，新的文明在这个星球上出现。其中有一个科学家在墓之森树木的根部发现了“圣光”这种新的物质，常温下呈现气态，低温状态下为固态。在某次研究过程中，实验人员不小心催发了“圣光”，展现出了“魔法”，从此各国开始大力研究“圣光”。他们发现“圣光”无法直接作为能源使用，但是有机生命体能够使用圣光从而发出“魔法”，而魔法所造成的效果和有机体的智力水平相关，圣光更容易在智力水平较高的物种，比如人类身上聚集，但是即便如此产生“法师”的概率也小的可怜。圣光仅仅在墓之森区域出现，又恰好是边界地区，因此奥伦娜和楚斯卡德开始了暗中较量。<br>楚斯卡德试图使用圣光制造自己的“法师部队”，他们在传统的特种部队的基础上拥有一定的“魔法”。而奥伦娜则更进一步，想让所有人都能掌握这种力量。在漫长的研究后，终于找到了能在人类体内催生出圣光能量的方法，虽然他们对圣光的本源构造依旧一无所知。当实验人员宣称得到了“稳定”的“方法”后，莎瑟王室的祖先身先士卒和一批志愿者一起接受了实验。但是实验出了差错，只有莎瑟王室的祖先活了下来，并且成功掌握了圣光，但即便如此，他的身体也遭受到了不可逆转的伤害和变异，而且随着时间的推移，这种变异在表面上会越来越明显。他为了保密，直接灭口，并永远封存了这个计划，只有他的妻子和总理大臣知道这一切，但在产下后代后越发抑郁，最终受不了了而suicide。而祖先也觉得被折磨过于痛苦，在十几年后等后代能够登上王位，故意布置了一个“意外”去suicide。计划终止后，圣光只能由奥伦娜派出专业采集队采集，并作为一种商品和周边国家交易，而且也不保证转换率。因此，奥伦娜一度成为这个星球上最强大的国家。<br>数十年后，莎瑟王室被爆出惊天秘密：当初去墓之森修行而下落不明以至于被人们以为已经去世的长子突然回到国家，并昭告全国说这都是他弟弟谋取篡位的阴谋。由此，奥伦娜不可避免的陷入内战。在经过数年战争后，长子恢复了王位，但是整个国家元气大伤，开始被其他国家所赶上，特别是历史上就有过摩擦的楚斯卡德，更是蠢蠢欲动，多次挑衅。由此爆发了第一次世界大战。<br>虽然奥伦娜元气大伤，国力尚未恢复至巅峰，但是和楚斯卡德打了个平手。双方见继续开战下去对两国都没有好处，反而会让别的小国坐收渔翁之利，所以签订了《墓森条约》，保持墓之森为奥伦娜的领土，而奥伦娜需要降低圣光等商品的出口价格和关税。<br>长子当初在墓之森被坑，险些丧命，不知不觉走到了另一个国家。当地的一个女村民（兮兮）救了他，并帮他逐步和国内的势力取得联系。虽然他恢复王位之后有心想娶她，但是终究还是娶了另一个国家的公主为王后。不过兮兮在见到他时，被魔法误伤，竟觉醒了记忆，也趁在长子恢复国王身份后的机会，了解了很多王室甚至于种族的秘密。他们人族虽然同为碳基生物，但是和这个星球上的生物并不相同，从基因表达上看似乎是退化而来。而圣光和他们的基因并没有完全兼容，所以产生了一堆问题。要想解决这些问题，必须要用大量法师作为小白鼠进行试验。王子并不想重启这个实验，因为他既然已经成为了国王，不能为了自己的遗传变异，而随便杀人。但是兮兮不这么认为。为了找到“真相”，她借国王的名义，命令国内唯一的法师专属学校“维克学院”暗中开始实验，不过她规定实验对象只能是那些“没有品德缺乏管教”的法师学徒，并且不能伤及他们性命，而主要是作为惩戒手段的补充。这段时间内，她发现法师学的知识越多，对世界理解越深刻，那么法术威力也会逐级提升，一直到一个上限。<br>数百年后，莎瑟出生。她的法力比父辈都高，同时侵蚀程度也更深。因为外表，童年时期她没有人可以一起玩。</p>
-<p>先写这些吧</p>
+<h2 id="究极方法：删node-modules"><a href="#究极方法：删node-modules" class="headerlink" title="究极方法：删node_modules"></a>究极方法：删node_modules</h2><p>如果你碰到了一些奇奇怪怪的问题，而且用了网上大佬的方法还没有解决的话，那么删除node_modules然后重新</p>
+<pre><code>npm install</code></pre><p>删除时还会有权限问题，要把“只读”属性去掉。<br>什么叫黑洞node啊（战术后仰）</p>
+<h2 id="神秘的python2"><a href="#神秘的python2" class="headerlink" title="神秘的python2"></a>神秘的python2</h2><p>RN的官网上说只支持python2，于是我自己用anaconda装了一个python2.7的环境（原来还有一个python3.7的），但是还没有activate。不过按RN官网教程走下来好像没有用到py2（也或许是被我忽视了），特此记录，留待验证（等n年后换电脑+还记得这个问题再说吧）</p>
+<h2 id="vscode的react-native-tools扩展"><a href="#vscode的react-native-tools扩展" class="headerlink" title="vscode的react native tools扩展"></a>vscode的react native tools扩展</h2><p>不知道是环境太新还是什么问题，反正和网上教程对不上，安装后无法直接加配置（launch.json）。但是可以手动创建。如果启动调试遇到了花式报错，在尝试网上的解决方法时，别忘了用一下本文开头提到的究极方法。</p>
+<blockquote>
+<p>当然，还有万能重启大法</p>
+</blockquote>
+<h2 id="新版示范代码的问题"><a href="#新版示范代码的问题" class="headerlink" title="新版示范代码的问题"></a>新版示范代码的问题</h2><p>在vscode里</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> App<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> React$Node <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>这段代码中<code>React$Node</code>会报错。我选择把它改成旧版写法：</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+    <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>参考链接：<a href="https://segmentfault.com/q/1010000021798166" target="_blank" rel="noopener">https://segmentfault.com/q/1010000021798166</a></p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>不知道是不是错觉，flutter号称的原生性能，感觉还没有RN流畅（可能是测试项目的界面复杂程度不一样），留待验证吧</p>
 
     </div>
 
@@ -234,13 +243,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/06/20/ceshi/" rel="prev" title="测试">
-      <i class="fa fa-chevron-left"></i> 测试
+    <a href="/2020/08/20/20200821%E5%BB%BA%E6%A8%A1%E7%AC%94%E8%AE%B01/" rel="prev" title="数学建模竞赛笔记1">
+      <i class="fa fa-chevron-left"></i> 数学建模竞赛笔记1
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/06/23/20200627moristory2part2/" rel="next" title="moristory2 part2">
-      moristory2 part2 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -300,6 +306,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#究极方法：删node-modules"><span class="nav-number">1.</span> <span class="nav-text">究极方法：删node_modules</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#神秘的python2"><span class="nav-number">2.</span> <span class="nav-text">神秘的python2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vscode的react-native-tools扩展"><span class="nav-number">3.</span> <span class="nav-text">vscode的react native tools扩展</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新版示范代码的问题"><span class="nav-number">4.</span> <span class="nav-text">新版示范代码的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">5.</span> <span class="nav-text">其他</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -514,7 +521,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'weypro.github.io',
       owner       : 'weypro',
       admin       : ['weypro'],
-      id          : '1e2f223d0084a190b30988c4bd98b03d',
+      id          : '7a19de346c501aa33a44e584d6a80537',
         language: '',
       distractionFreeMode: true
     });
