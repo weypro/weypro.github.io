@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="数学建模笔记1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数学建模竞赛笔记1">
+<meta property="og:url" content="http://yoursite.com/2021/02/06/20200821%E5%BB%BA%E6%A8%A1%E7%AC%94%E8%AE%B01/index.html">
+<meta property="og:site_name" content="wey的blog">
+<meta property="og:description" content="数学建模笔记1">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-02-05T18:26:12.208Z">
+<meta property="article:modified_time" content="2020-08-23T07:22:27.095Z">
+<meta property="article:author" content="wey">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/2021/02/06/20200821%E5%BB%BA%E6%A8%A1%E7%AC%94%E8%AE%B01/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>数学建模竞赛笔记1 | wey的blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">wey的blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/06/20200821%E5%BB%BA%E6%A8%A1%E7%AC%94%E8%AE%B01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wey">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="wey的blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          数学建模竞赛笔记1
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-02-06 02:26:12" itemprop="dateCreated datePublished" datetime="2021-02-06T02:26:12+08:00">2021-02-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-08-23 15:22:27" itemprop="dateModified" datetime="2020-08-23T15:22:27+08:00">2020-08-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/math/" itemprop="url" rel="index"><span itemprop="name">math</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>数学建模笔记1</p>
+<a id="more"></a>
+
+
+<h1 id="赛题研究的目的"><a href="#赛题研究的目的" class="headerlink" title="赛题研究的目的"></a>赛题研究的目的</h1><ol>
+<li><p>发生了什么?<br>描述性统计、综合评价、分类与判别</p>
+</li>
+<li><p>为什么要发生?<br>关联与因果分析、比较分析</p>
+</li>
+<li><p>未来如何发展?<br>预测与预报</p>
+</li>
+<li><p>现在应如何决策?<br>优化与控制</p>
+</li>
+</ol>
+<h2 id="综合评价（指标从多维降为一维）"><a href="#综合评价（指标从多维降为一维）" class="headerlink" title="综合评价（指标从多维降为一维）"></a>综合评价（指标从多维降为一维）</h2><blockquote>
+<p>适用不同的问题：属于哪一类?排名是多少?最优方案是什么?  </p>
+</blockquote>
+<ol>
+<li><p>模糊综合评价<br>评价研究对象属于哪一类（例如优良中差）</p>
+</li>
+<li><p>主成分综合评价、因子分析、投影寻踪综合评价<br>研究排名。其中主成分有争议，推荐因子分析。投影寻踪常用于水质评价</p>
+</li>
+<li><p>层次分析法（AHP）、熵值法、秩和比综合评价、优劣解、距离法(TOPSIS法)<br>更多用于选择最优方案，也可排序  </p>
+<ul>
+<li>层次分析法和熵值法都是定权重</li>
+<li>层次分析法容易受评委讨厌（被滥用）。且使用前必须说明两点<ol>
+<li>说清比较矩阵的由来（要有客观依据，比如如何调研）</li>
+<li>要通过一致性检验，不能只求特征向量</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>灰色关联分析、数据包络（DEA）分析<br>用于比较排名</p>
+</li>
+</ol>
+<h2 id="分类与判别"><a href="#分类与判别" class="headerlink" title="分类与判别"></a>分类与判别</h2><blockquote>
+<p>正态分布<br>需要符合中心极限定理</p>
+</blockquote>
+<ol>
+<li><p>模糊聚类*<br>指标里有人为经验因素</p>
+</li>
+<li><p>系统聚类*<br>研究连续性数据、数据量大、基于距离（比如欧氏距离）</p>
+</li>
+<li><p>层次聚类  </p>
+</li>
+<li><p>密度聚类<br>数据集比较稠密且形状非凸  </p>
+</li>
+<li><p>其他聚类  </p>
+</li>
+<li><p>贝叶斯判别<br>每一类都要服从正态分布  </p>
+</li>
+<li><p>费舍尔判别  </p>
+</li>
+<li><p>模糊识别<br>数据量要求小</p>
+</li>
+<li><p>神经网络  </p>
+</li>
+<li><p>支持向量机<br>国内后两者谨慎使用，因为没有模型。神经网络适合模型检验，注意用于预测时过拟合</p>
+</li>
+</ol>
+<h2 id="关联、因果与比较"><a href="#关联、因果与比较" class="headerlink" title="关联、因果与比较"></a>关联、因果与比较</h2><ol>
+<li><p>Person相关（数据服从正态分布）、Sperman等级相关系数或kendall秩相关系数（没要求正态分布）、Copula相关系数（比较高端）<br>一对一变量分析</p>
+</li>
+<li><p>标准化回归、路径分析<br>多个变量对一个变量的关联分析</p>
+</li>
+<li><p>典型相关系数、偏最小二乘回归<br>多对多变量分析</p>
+</li>
+<li><p>主成分分析、因子分析、对应分析、岭回归、主成分回归等<br>没有因变量或多个变量高度相关</p>
+<ul>
+<li>主成分能解决三个问题：多个变量里求最核心的</li>
+<li>因子分析：多个变量里隐藏了哪个变量（公因子）</li>
+<li>对应分析：两个不同属性变量的对应关系（例如很多指标与地区，问哪个指标在哪个地区表现得好），是主成分和因子分析的融合</li>
+<li>岭回归：筛选变量（一个因变量若干自变量，去掉多余自变量）、通过统计学检验和残差检验但是没有过专业检验，比如模型得出不可思议结论（消费者收入增加，坐飞机人数减少），可用岭回归对其改造</li>
+<li>主成分回归：预测、影响因素大小关系</li>
+</ul>
+</li>
+<li><p>格兰杰因果检验、协整检验<br>因果分析（适用国赛C题经济管理）</p>
+</li>
+<li><p>方差分析、协方差分析等<br>分类变量对连续性变量影响（例如施肥ABC水平对产量影响），要求正态分布<br>后者是其他种类的变量也会对连续性变量产生影响，但是需要消除其他种类的变量，专门研究分类变量对连续性变量的影响</p>
+</li>
+<li><p>正交设计、均匀设计<br>国赛中暂未出现过</p>
+</li>
+<li><p>混合线性模型<br>类似协方差分析</p>
+</li>
+<li><p>独立性检验<br>两个分类变量的关联</p>
+</li>
+<li><p>非参数的符号检验、秩和检验<br>不要求正态分布</p>
+</li>
+<li><p>非参数中的M检验法和H检验法<br>不要求正态分布</p>
+</li>
+<li><p>结构方程模型<br>一组变量和一组变量的关联</p>
+</li>
+</ol>
+<h2 id="预测与预报"><a href="#预测与预报" class="headerlink" title="预测与预报"></a>预测与预报</h2><ol>
+<li><p>单序列预测:  </p>
+<ol>
+<li><p>灰色预测模型（被滥用）  </p>
+<ul>
+<li>数据量不大  </li>
+<li>不知道数据分布</li>
+<li>具备指数趋势</li>
+</ul>
+</li>
+<li><p>时间序列预测（ARIMA\ARCH\X11\GARCH)</p>
+<ul>
+<li>数据量大、波动性强</li>
+</ul>
+</li>
+<li><p>小波分析预测、神经网络预测（RBF\GRNN）</p>
+<ul>
+<li>数据量大</li>
+</ul>
+</li>
+<li><p>混沌序列预测、相空间重构理论</p>
+</li>
+<li><p>马尔科夫预测</p>
+<ul>
+<li>数据随机波动  </li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>回归分析预测:</p>
+<ol>
+<li>线性回归、逐步回归、非线性回归<ul>
+<li>因变量服从正态</li>
+</ul>
+</li>
+<li>logistic回归（使用趋势上升）、Probit回归<ul>
+<li>因变量服从 01 分布</li>
+</ul>
+</li>
+<li>虚拟变量回归<ul>
+<li>因变量服从正态，自变量为分类</li>
+</ul>
+</li>
+<li>响应面回归、正交二次回归等<ul>
+<li>因变量服从正态</li>
+</ul>
+</li>
+<li>动力方程、微分方程预测（可优化可预测）</li>
+<li>生存分析、泊松回归、分位数回归<ul>
+<li>泊松回归：因变量服从泊松分布</li>
+</ul>
+</li>
+<li>向量自回归、偏最小二乘回归<ul>
+<li>多个变量间相互影响，要建立多方程</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="优化与控制"><a href="#优化与控制" class="headerlink" title="优化与控制"></a>优化与控制</h2><p>难度在于写出数学模型，而不是只用算法，否则没奖</p>
+<ol>
+<li>线性规划、整数规划、0-1规划</li>
+<li>非线性规划与智能优化算法</li>
+<li>多目标规划和目标规划</li>
+<li>网络优化</li>
+<li>动态规划（和上一项有重复）</li>
+<li>排队论与计算机仿真</li>
+<li>模糊规划</li>
+<li>随机优化（统计）</li>
+</ol>
+<h1 id="2012-A-葡萄酒评价问题"><a href="#2012-A-葡萄酒评价问题" class="headerlink" title="2012 A 葡萄酒评价问题"></a>2012 A 葡萄酒评价问题</h1><h2 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h2><ol>
+<li>有无显著性差异-&gt;比较问题<br>正态分布：方差分析、T检验（概率统计 假设检验）<br>不一定正态分布：非参数的符号检验、秩和检验、H、M检验<br>可信：如果打分集中（多个人评价观点趋向一致），方差小<br>同一个人给不同酒评分应该有区分</li>
+<li>分级：可综合评价可分类</li>
+<li>多个指标对多个指标——关联分析</li>
+<li>可以是预测问题（评价值可连续可离散分类logistic回归），关联分析。综合评价不合适（质量本来就有一个指标）。可分类判别</li>
+</ol>
+<h2 id="抓住出题人想法"><a href="#抓住出题人想法" class="headerlink" title="抓住出题人想法"></a>抓住出题人想法</h2><p>最后一问是核心。酿酒葡萄和葡萄酒的理化指标对葡萄酒质量的影响，并论证能否用葡萄和葡萄酒的理化指标来评价葡萄酒的质量。<br>控制生产原材料质量<br>减少品酒评价成本</p>
+<h2 id="数据的预处理"><a href="#数据的预处理" class="headerlink" title="数据的预处理:"></a>数据的预处理:</h2><p>缺失值与异常值的处理<br>第一组红葡萄酒样20，评酒员4号中缺色调数据，6;<br>第一组白葡萄酒样3,7号评酒员的持久性超上限，77–7;<br>第一组白葡萄酒样8,9号评酒员的持久性超上限，16–6 ;<br>酿酒白葡萄的百粒质量第三组数据太大，2226.1–226.1。<br>这些缺失值都应该补上，或者在分析时删除</p>
+<p>异常值：</p>
+<ul>
+<li>聚类适合多维多序列</li>
+<li>统计密度函数适合单序列</li>
+</ul>
+<p>缺失值：（matlab表示为NAN)</p>
+<ul>
+<li>插值法（线性、移动平均）</li>
+<li>删除法</li>
+<li>高频替代法</li>
+<li>均值法</li>
+<li>回归法</li>
+<li>聚类法</li>
+</ul>
+<h2 id="查资料，确定思路"><a href="#查资料，确定思路" class="headerlink" title="查资料，确定思路:"></a>查资料，确定思路:</h2><p>“七分原料、三分酿造”，葡萄酒的质量主要决定于品种原料的质量，其次才是工艺和设备。<br>水和糖是葡萄的最主要成分，是葡萄能在酵母作用下发酵成葡萄酒的物质基础。糖、酸、单宁、色素和芳香物质是构成酿酒葡萄品质优劣的要素。葡萄的品种、生长环境、成熟度等都影响葡萄酒的质量。<br>优质葡萄酒是酸度、香气、风味等相互平衡的葡萄酒，而葡萄果实中糖、酸决定的是葡萄酒的酒度、味感。丹宁、总酚、芳香物质、花色。<br>素苷等决定葡萄酒的结构、香气、外观等质量特征</p>
+<h2 id="猜评阅标准"><a href="#猜评阅标准" class="headerlink" title="猜评阅标准"></a>猜评阅标准</h2><p>第1问<br>问题:分析附件1中两组评酒员的评价结果有无显著性差异，哪一组结果更可信?<br>定义评价指标<br>好的品评结果应该是对同一酒样评价时这些评酒员之间的差距小、且这些酒样之间的区分度明确。<br>参考:红酒中样品23是好酒，样品12是较差的酒。<br>参考结论:两组评价结果有显著性差异;红酒第一组评价结果好，白酒第二组评价结果好。</p>
+<p>第一问:方差分析，t检验，F检验，秩和检验，Wilcoxon符号秩检验，构造一些统计量，计算它们的值，是否通过检验，给出结果。</p>
+<p>第二问:比较方差大小，Cronbach可信度系数，比较酒样F值和评酒员F值的相对大小，Spearman秩相关系数，肯德尔和谐系数法。  </p>
+<p>应该注意方差分析的条件是否满足，需要了解适用范围，对所得到的结果应该给出一些分析和说明。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/02/02/%E9%9A%8F%E4%BE%BF%E5%86%99%E7%82%B9%E4%BB%80%E4%B9%88/" rel="prev" title="随便写点什么">
+      <i class="fa fa-chevron-left"></i> 随便写点什么
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/02/06/20200823reactnative%E4%B8%80%E4%BA%9B%E5%9D%91/" rel="next" title="react native一些坑">
+      react native一些坑 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#赛题研究的目的"><span class="nav-number">1.</span> <span class="nav-text">赛题研究的目的</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#综合评价（指标从多维降为一维）"><span class="nav-number">1.1.</span> <span class="nav-text">综合评价（指标从多维降为一维）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分类与判别"><span class="nav-number">1.2.</span> <span class="nav-text">分类与判别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关联、因果与比较"><span class="nav-number">1.3.</span> <span class="nav-text">关联、因果与比较</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#预测与预报"><span class="nav-number">1.4.</span> <span class="nav-text">预测与预报</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优化与控制"><span class="nav-number">1.5.</span> <span class="nav-text">优化与控制</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2012-A-葡萄酒评价问题"><span class="nav-number">2.</span> <span class="nav-text">2012 A 葡萄酒评价问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题分析"><span class="nav-number">2.1.</span> <span class="nav-text">问题分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#抓住出题人想法"><span class="nav-number">2.2.</span> <span class="nav-text">抓住出题人想法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据的预处理"><span class="nav-number">2.3.</span> <span class="nav-text">数据的预处理:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查资料，确定思路"><span class="nav-number">2.4.</span> <span class="nav-text">查资料，确定思路:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#猜评阅标准"><span class="nav-number">2.5.</span> <span class="nav-text">猜评阅标准</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">wey</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/weypro" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;weypro" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://buger404.github.io/" title="https:&#x2F;&#x2F;buger404.github.io&#x2F;" rel="noopener" target="_blank">Error 404</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://trisolaris233.github.io/" title="https:&#x2F;&#x2F;trisolaris233.github.io&#x2F;" rel="noopener" target="_blank">阳光加冰</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://sweeticelolly.github.io/" title="https:&#x2F;&#x2F;sweeticelolly.github.io&#x2F;" rel="noopener" target="_blank">冰棍</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://yorkin.cool/" title="http:&#x2F;&#x2F;yorkin.cool&#x2F;" rel="noopener" target="_blank">方程</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://www.dimojang.com/" title="http:&#x2F;&#x2F;www.dimojang.com&#x2F;" rel="noopener" target="_blank">迪莫</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://9bie.org/" title="https:&#x2F;&#x2F;9bie.org&#x2F;" rel="noopener" target="_blank">⑨BIE</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://xxs2.cn/" title="https:&#x2F;&#x2F;xxs2.cn&#x2F;" rel="noopener" target="_blank">小学生</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://tan90.pw/" title="https:&#x2F;&#x2F;tan90.pw&#x2F;" rel="noopener" target="_blank">沉默</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://nutr1t07.github.io/" title="https:&#x2F;&#x2F;nutr1t07.github.io&#x2F;" rel="noopener" target="_blank">Nutr1t07</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+<!--
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+-->
+  <span class="author" itemprop="copyrightHolder">wey</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '9d9fdb1e56df5baf6fc0',
+      clientSecret: '090d5876cb8d8d61a90ab14ef2f6efa688d5e6d6',
+      repo        : 'weypro.github.io',
+      owner       : 'weypro',
+      admin       : ['weypro'],
+      id          : 'c84e4ea1696479f633015b8688a6aa50',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
